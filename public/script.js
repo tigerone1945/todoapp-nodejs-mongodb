@@ -15,12 +15,12 @@ const showTasks = async () => {
     const allTasks = tasks.map((task) => {
       const { _id: taskID, name: taskName, completed } = task;
 
-      return `      <div class="single-task">
+      return `      <div class="single-task ${completed && 'task-completed'}">
         <h5>
           <span><i class="fa-solid fa-check-circle"></i></span>${taskName}
         </h5>
         <div class="task-links">
-          <a href="#" class="edit-link" data-id="${taskID}">
+          <a href="edit.html?id=${taskID}" class="edit-link" data-id="${taskID}">
             <i class="fa-solid fa-pen"></i>
           </a>
           <button class="delete-btn" data-id="${taskID}">

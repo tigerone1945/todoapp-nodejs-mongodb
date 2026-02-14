@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>タスク編集</title>
+    <link rel="stylesheet" href="styles.css" />
+  <link
+   rel="stylesheet" 
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <form class="single-task-form" autocomplete="off">
+        <h4>タスクの編集</h4>
+        <div class="form-control">
+          <p><strong>タスクID:</strong> <span class="task-edit-id"></span></p>
+        </div>
+        <div class="form-control">
+          <label for="taskName">名前</label>
+          <input type="text" name="taskName" id="taskName" class="task-edit-name" autocomplete="off" required />
+        </div>
+        <div class="form-control">
+          <label for="taskCompleted">完了・未完了</label>
+          <input type="checkbox" name="taskCompleted" id="taskCompleted" class="task-edit-completed" />
+        </div>
+        <button type="submit" class="block btn task-edit-btn">保存</button>
+        <a href="index.html" class="btn back-link">タスクに戻る</a>
+        <div class="form-alert"></div>
+      </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="editTask.js"></script>
+  </body>
+</html>
