@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mongo DB with Node.js - Todo App</title>
+  <link rel="stylesheet" href="styles.css">
+  <link
+   rel="stylesheet" 
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+  <form class="task-form">
+    <h4>Node.js Todo App</h4>
+    <div class="form-control">
+      <input type="text" name="name" class="task-input" placeholder="Enter a new task" required>
+      <button type="submit" class="btn submit-btn">登録</button>
+    </div>
+    <div class="form-alert"></div>
+  </form>
+  <section class="tasks-container">
+    <div class="tasks">
+
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
